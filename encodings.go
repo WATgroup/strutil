@@ -15,3 +15,14 @@ const (
 	//
 	RuneError = '\uFFFD' // the "error" Rune or "Unicode replacement character"
 )
+
+const (
+	UTF8_ReplacementChar = "\xef\xbf\xbd"
+	UTF8_BOM = "\xef\xbb\xbf"
+)
+
+// Code points in the surrogate range are not valid for UTF-8.
+const (
+	surrogateMin = 0xD800
+	surrogateMax = 0xDFFF
+)

@@ -92,6 +92,11 @@ func BuildSpanBM_A(charset string) (ret AsciiBitmap) {
 	return
 }
 
+func MergeSpanBM_A(bitmap *AsciiBitmap, charset string) bool {
+	buildTableA(bitmap, charset)
+	return true
+}
+
 func buildTableA(res *AsciiBitmap, charset string) {
 	// expecting the compiler to notice it won't be modified... and avoid the copy
 	cs := []byte(charset)

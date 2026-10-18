@@ -5,7 +5,7 @@
 package strutil_test
 
 import (
-	"fmt"
+	// "fmt"
 	"github.com/WATgroup/assert"
 	. "github.com/WATgroup/strutil"
 	"testing"
@@ -16,11 +16,11 @@ var bm2 = BuildSpanBM_A("abcdefghijklmnopqrstuvwxyz")
 
 func TestBuildTable(t *testing.T) {
 
-	t1 := BuildSpanBM_A("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-	fmt.Printf("%016x\n", t1)
+	/*t1*/_ = BuildSpanBM_A("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+	// fmt.Printf("%016x\n", t1)
 
-	t2 := BuildSpanBM_A("abcdefghijklmnopqrstuvwxyz")
-	fmt.Printf("%016x\n", t2)
+	/*t2*/_ = BuildSpanBM_A("abcdefghijklmnopqrstuvwxyz")
+	// fmt.Printf("%016x\n", t2)
 }
 
 func TestStrspnT(t *testing.T) {
